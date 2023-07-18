@@ -19,6 +19,7 @@ $_COOKIE['agentpass'] = $_COOKIE['agentpass'] ?? '';
 include_once(SYSTEM_ROOT . "functions.php");
 include_once("sql.php");
 include_once("PdoHelper.php");
+include_once(ROOT . "config.php");
 
 register_shutdown_function("shutdownLog");
 set_error_handler("myErrorHandlerLog", E_ALL);
@@ -26,18 +27,20 @@ set_error_handler("myErrorHandlerLog", E_ALL);
 header("Content-type:text/html;charset=utf-8");
 
 $console = "九都";
-$db['host'] = "154.23.134.134";
-$db['user'] = "feiniao";
-$db['pass'] = "123456rxy";
-$db['name'] = "feiniao";
-$dbconn = db_connect($db['host'], $db['user'], $db['pass'], $db['name']);
+$dbconn = db_connect(
+    $dbconfig['host'], 
+    $dbconfig['user'], 
+    $dbconfig['pwd'], 
+    $dbconfig['dbname'], 
+    $dbconfig['port']
+);
 
 $dbpdo = new PdoHelper([
-    'host' => '154.23.134.134',
-    'dbname' => 'feiniao',
-    'port' => '3306',
-    'user' => 'feiniao',
-    'pwd' => '123456rxy',
+    'host' => $dbconfig['host'],
+    'dbname' => $dbconfig['dbname'],
+    'port' => $dbconfig['port'],
+    'user' => $dbconfig['user'],
+    'pwd' => $dbconfig['pwd'],
 ]);
 
 $wx['ID'] = 'wxf46833403beb331a';

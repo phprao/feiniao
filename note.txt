@@ -19,10 +19,7 @@
 li.baok.top替换为你的域名
 
 修改数据库配置文件 :
-/web_reg.php
-Public/config.php
-Public/configok.php
-Public/db.class.php
+/config.php
 
 
 

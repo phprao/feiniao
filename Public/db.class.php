@@ -12,12 +12,12 @@ class db
 
     public function __construct($config = array())
     {
+        $this->config['DB_HOST'] = $config['DB_HOST']; //数据库主机
+        $this->config['DB_USER'] = $config['DB_USER']; //数据库用户名
+        $this->config['DB_PWD'] = $config['DB_PWD']; //数据库密码
+        $this->config['DB_NAME'] = $config['DB_NAME']; //数据库名
         $this->config['DB_TYPE'] = isset($config['DB_TYPE']) ? $config['DB_TYPE'] : 'mysql'; //数据库类型
-        $this->config['DB_HOST'] = isset($config['DB_HOST']) ? $config['DB_HOST'] : '154.23.134.134'; //数据库主机
-        $this->config['DB_USER'] = isset($config['DB_USER']) ? $config['DB_USER'] : 'feiniao'; //数据库用户名
-        $this->config['DB_PWD'] = isset($config['DB_PWD']) ? $config['DB_PWD'] : '123456rxy'; //数据库密码
         $this->config['DB_PORT'] = isset($config['DB_PORT']) ? $config['DB_PORT'] : 3306; //数据库端口，mysql默认是3306，一般不需要修改
-        $this->config['DB_NAME'] = isset($config['DB_NAME']) ? $config['DB_NAME'] : 'feiniao'; //数据库名
         $this->config['DB_CHARSET'] = isset($config['DB_CHARSET']) ? $config['DB_CHARSET'] : 'utf8'; //数据库编码
         $this->config['DB_PREFIX'] = isset($config['DB_PREFIX']) ? $config['DB_PREFIX'] : ''; //数据库表前缀
         $this->config['DB_PCONNECT'] = isset($config['DB_PCONNECT']) ? $config['DB_PCONNECT'] : false; //true表示使用永久连接，false表示不适用永久连接，一般不使用永久连接
