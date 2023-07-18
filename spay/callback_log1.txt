@@ -1,0 +1,1 @@
+{"singset":false,"roomid":"10029","userid":"oTcjQ5gyasCy0d6UIgBFbawUanP4","username":"\u8d50\u6211\u5927\u5634\u5df4\u5b50","headimg":"http:\/\/thirdwx.qlogo.cn\/mmopen\/vi_32\/nkibEGAbP8X791pDhPTyibD0VwztqJCSQDebNympwz89nKLmRlgDYIemYqDU1bzrn4qbukCibRT4aIUWVoibIRGBRQ\/132","agent":null,"game":""}

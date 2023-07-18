@@ -1,0 +1,30 @@
+域名/Weijiang/index.html?t=1567530884后台  后台账号admin 密码12345 安全码10029
+ 
+域名/Weijiang/robot_time.php管理员开奖报期
+
+域名/Weijiang/robot.php聊天下注机器人
+
+域名/Weijiang/fudong.php虚拟人数随机
+
+域名/abcaiji/caiji.php开奖采集
+
+域名/Weijiang/chat1.php 封盘
+
+域名/dtcaiji/chat.php封–蟹–播–报–中
+
+域名/Weijiang/templates/shaying/kong.php控制开
+奖（控杀)
+
+数据库搜索域名：
+li.baok.top替换为你的域名
+
+修改数据库配置文件 :
+/web_reg.php
+Public/config.php
+Public/configok.php
+Public/db.class.php
+
+
+
+
+http://192.168.2.200:9903/Weijiang/index.html
