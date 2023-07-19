@@ -3,8 +3,8 @@ session_start();
 error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
 date_default_timezone_set("Asia/Shanghai");
 
-define('SYSTEM_ROOT', dirname(__FILE__) . '/');
-define('ROOT', dirname(SYSTEM_ROOT) . '/');
+define('PUBLIC_DIR', dirname(__FILE__) . '/');
+define('ROOT', dirname(PUBLIC_DIR) . '/');
 
 $load = 5;
 $_SESSION['agent_user'] = $_SESSION['agent_user'] ?? '';
@@ -18,13 +18,14 @@ $_COOKIE['agentuser'] = $_COOKIE['agentuser'] ?? '';
 $_COOKIE['agentpass'] = $_COOKIE['agentpass'] ?? '';
 
 include_once(ROOT . "config.php");
-include_once(SYSTEM_ROOT . "functions.php");
-include_once("sql.php");
-include_once("db.class.php");
-include_once("PdoHelper.php");
+include_once(PUBLIC_DIR . "functions.php");
 
 register_shutdown_function("shutdownLog");
 set_error_handler("myErrorHandlerLog", E_ALL);
+
+include_once("sql.php");
+include_once("db.class.php");
+include_once("PdoHelper.php");
 
 header("Content-type:text/html;charset=utf-8");
 
@@ -55,6 +56,7 @@ if (!isset($mydb)) {
 
 $wx['ID'] = 'wxf46833403beb331a';
 $wx['key'] = 'fcebe4d47534957f90a513149533c0ca';
+
 $agent = $_GET['agent'] ?? 0;
 $g = $_GET['g'] ?? 0;
 $room = $_GET['room'] ?? 0;
