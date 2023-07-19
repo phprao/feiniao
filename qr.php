@@ -9,7 +9,7 @@ if(empty($_GET['room'])){
 $room=$_GET['room'];
 $agent=@$_GET['agent'];
 $g=@$_GET['g']; //pk10,xyft,cqssc,xy28,jnd28,jsmt,jssc,jsssc
-if(is_weixin1()==true){
+if(is_weixin()==true){
     $wx['ID'] = 'wxf46833403beb331a';
     $time = date('Y-m-d H:i:s',time());
 
@@ -49,10 +49,4 @@ if(is_weixin1()==true){
             </form><script type='text/javascript'>function load_submit(){document.form1.submit()}load_submit();</script>";
 }
 
-function is_weixin1(){
-    if ( strpos($_SERVER['HTTP_USER_AGENT'], 'MicroMessenger') !== false ) {
-        return true;
-    }
-    return false;
-}
 ?>

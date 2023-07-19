@@ -1,0 +1,10 @@
+2023-07-18 22:54:41 [ERROR] [myErrorHandlerLog] [8] Undefined index: tuiguang in /www/feiniao/index.php:5
+2023-07-18 22:54:41 [ERROR] [myErrorHandlerLog] [8] Undefined index: verify in /www/feiniao/index.php:15
+2023-07-18 22:54:41 [ERROR] [myErrorHandlerLog] [8] Undefined index: room in /www/feiniao/index.php:94
+2023-07-18 22:54:41 [ERROR] [myErrorHandlerLog] [8] Undefined index: agent in /www/feiniao/index.php:95
+2023-07-18 22:54:41 [ERROR] [myErrorHandlerLog] [8] Undefined index: g in /www/feiniao/index.php:96
+2023-07-18 22:55:38 [ERROR] [myErrorHandlerLog] [8] Undefined index: tuiguang in /www/feiniao/index.php:5
+2023-07-18 22:55:38 [ERROR] [myErrorHandlerLog] [8] Undefined index: verify in /www/feiniao/index.php:15
+2023-07-18 22:55:38 [ERROR] [myErrorHandlerLog] [8] Undefined index: room in /www/feiniao/index.php:94
+2023-07-18 22:55:38 [ERROR] [myErrorHandlerLog] [8] Undefined index: agent in /www/feiniao/index.php:95
+2023-07-18 22:55:38 [ERROR] [myErrorHandlerLog] [8] Undefined index: g in /www/feiniao/index.php:96
